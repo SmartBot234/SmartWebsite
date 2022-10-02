@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  height: auto;
+}
+:root {
+  --color-bg: #353845;
+  --color-text-main: #000000;
+  --color-primary: #3a7ca5;
+  --color-secondary: #2f6690;
+  --color-secondary-2: #36b6fe;
+  --color-secondary-3: #5b86e5;
+  --wrapper-height: vh;
+  --image-max-width: 300px;
+  --image-margin: 1rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+
+
+body {
+font-family: 'Quicksand', sans-serif;
+  background-color: var(--color-bg);
+}
+
+.navbar {
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  padding-left: 20px;
+  font-size: 18px;
+}
+.navbar li {
+  margin: 2px;
+  padding: 3px;
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  border-radius: 24px;
+  width: 90%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-shadow: rgba(91, 134, 229, 0.5) 5px 5px, rgba(91, 134, 229, 0.3) 10px 10px, rgba(91, 134, 229, 0.2) 15px 15px, rgba(91, 134, 229, 0.1) 20px 20px, rgba(91, 134, 229, 0.05) 25px 25px;
+
+
+}
+.box2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  font-size: 24px;
+  margin: 10px;
+  border-radius: 12px;
+  max-width: 85%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
+  background-color: #464656;
+}
+.minibox {
+  background: linear-gradient(to bottom, #36d1dc, #5b86e5);  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  font-size: 20px;
+  padding: 22px;
+  margin: 10px;
+  border-radius: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  height: 100%;
+}
+
+.title {
+  font-family: 'Rajdhani', sans-serif;
+  color: #25488f;
+  margin: 0;
+  filter: blur(0px);
+}
+.blur {
+  padding: 100px;
+  filter: blur(10px);
+}
+.illustration {
+  width: 15%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2800ff;
+}
+
+
+.navimage {
+  max-width: 3vh;
+  min-width: 1vh
+}
+
+.divider {
+  padding: 0 0 1.5rem;
+}
+
+
+.button-invite {
+  align-items: center;
+  background-image: linear-gradient(144deg,var(--color-primary), var(--color-secondary-2) 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-invite:active,
+.button-invite:hover {
+  outline: 0;
+}
+
+.button-invite span {
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 400ms;
+  
+}
+
+.button-invite:hover span {
+  background-image: none;
+  filter: blur(1.25px)
+}
+
+ 
