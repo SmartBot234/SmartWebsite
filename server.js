@@ -1,11 +1,9 @@
 const express = require('express')
-const path = require("path")
-require('dotenv').config({path:__dirname+'/../.env'})
+require('dotenv').config()
 const app = express()
 const PORT = process.env.PORT;
 
 app.set('view-engine', 'ejs')
-app.set('views', path.join(__dirname, './views'))
 
 var home = require('./routes/home.js');
 var privacy = require('./routes/privacy.js');
