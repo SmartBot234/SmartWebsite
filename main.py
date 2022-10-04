@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, request
 
 app = Flask(__name__)
 
@@ -25,5 +25,9 @@ def inviteadmin():
 @app.route("/support")
 def support():
     return redirect("https://discord.com/invite/9e9TG64Cqn")
+
+@app.errorhandler(404)
+def not_found(e):
+    return render_template('404.html', value=request.base_url)
 
 app.run(host="0.0.0.0", port=8080)
